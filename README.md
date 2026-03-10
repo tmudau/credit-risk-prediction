@@ -16,29 +16,18 @@ Default rate: 21.8% of borrowers defaulted
 
 Variables include: borrower age, income, employment length, home ownership, loan amount, interest rate, loan intent, loan grade, and credit history
 
-Project Structure:
-credit-risk-prediction/
-├── data/                   # Raw dataset (not pushed to GitHub)
-├── notebooks/              # Jupyter notebook with full analysis
-├── outputs/                # Generated charts and visualisations
-├── requirements.txt        # Python dependencies
-└── README.md
-
 Methodology:
-1. Data Cleaning
+ 1. Data Cleaning
+    Removed unrealistic values such as ages above 90 and employment lengths above 60 years
+    Filled 9.6 percent missing interest rate values with the median rate
+    Retained 28,465 clean records after preprocessing
 
-Removed unrealistic values such as ages above 90 and employment lengths above 60 years
-
-Filled 9.6 percent missing interest rate values with the median rate
-
-Retained 28,465 clean records after preprocessing
-
-2. Exploratory Data Analysis
+ 2. Exploratory Data Analysis
  Key findings from the exploratory analysis:
-   Younger borrowers between ages 20 and 35 account for the majority of both applications and defaults
-   Debt consolidation loans have the highest default rate at 28 percent, followed by medical loans at 26 percent
-   Defaulters tend to pay significantly higher interest rates on average
-   Loan amount as a percentage of income clearly separates defaulters from non defaulters
+    Younger borrowers between ages 20 and 35 account for the majority of both applications and defaults
+    Debt consolidation loans have the highest default rate at 28 percent, followed by medical loans at 26 percent
+    Defaulters tend to pay significantly higher interest rates on average
+    Loan amount as a percentage of income clearly separates defaulters from non defaulters
 
 3. Feature Engineering:
 Three new features were created to capture relationships not expressed directly in the raw data:
