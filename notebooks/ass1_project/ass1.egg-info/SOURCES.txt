@@ -1,0 +1,10 @@
+dev-requirements.txt
+pyproject.toml
+ass1/__init__.py
+ass1/__main__.py
+ass1.egg-info/PKG-INFO
+ass1.egg-info/SOURCES.txt
+ass1.egg-info/dependency_links.txt
+ass1.egg-info/requires.txt
+ass1.egg-info/top_level.txt
+tests/test_ass1.py
